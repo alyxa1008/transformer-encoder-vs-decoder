@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tfcmp"
+version = "0.1.0"
+description = "Transformer Encoder vs Decoder: same parts, classification vs generation (NSMC)"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.2", "numpy", "pandas", "pyyaml", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["tfcmp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

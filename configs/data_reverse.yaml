@@ -1,0 +1,11 @@
+# M2 장난감 번역(숫자 뒤집기) 데이터 생성 (CLAUDE.md 3.1)
+task: make_reverse_data
+seed: 42
+out_dir: data/processed/reverse
+report_dir: results
+min_len: 5
+max_len: 20
+sizes:
+  train: 20000
+  valid: 2000
+  test: 2000

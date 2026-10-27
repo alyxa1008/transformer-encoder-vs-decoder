@@ -1,0 +1,108 @@
+{
+  "seed": 42,
+  "max_len": 128,
+  "min_freq": 2,
+  "sizes": {
+    "train": 30000,
+    "dev": 5000,
+    "test": 10000
+  },
+  "clean": {
+    "ratings_train": {
+      "input": 150000,
+      "removed_empty": 5,
+      "removed_duplicate": 3813,
+      "output": 146182
+    },
+    "ratings_test": {
+      "input": 50000,
+      "removed_empty": 3,
+      "removed_duplicate": 840,
+      "output": 49157
+    },
+    "test_overlap_with_train_removed": 796
+  },
+  "vocab": {
+    "size": 1722,
+    "n_specials": 5,
+    "distinct_chars_in_train": 2102,
+    "chars_mapped_to_unk_by_min_freq": 385
+  },
+  "splits": {
+    "train": {
+      "n": 30000,
+      "label_counts": {
+        "0": 15052,
+        "1": 14948
+      },
+      "pos_ratio": 0.4982666666666667,
+      "length": {
+        "n": 30000,
+        "mean": 36.074933333333334,
+        "p50": 27.0,
+        "p90": 77.0,
+        "p99": 139.0,
+        "max": 158,
+        "char_budget": 127,
+        "n_truncated": 929,
+        "truncated_ratio": 0.030966666666666667,
+        "length_bins": {
+          "<20": 9833,
+          "20-60": 15821,
+          ">=60": 4346
+        }
+      },
+      "unk_char_ratio": 0.00035574101315040543
+    },
+    "dev": {
+      "n": 5000,
+      "label_counts": {
+        "0": 2509,
+        "1": 2491
+      },
+      "pos_ratio": 0.4982,
+      "length": {
+        "n": 5000,
+        "mean": 36.1492,
+        "p50": 28.0,
+        "p90": 74.10000000000036,
+        "p99": 139.0,
+        "max": 152,
+        "char_budget": 127,
+        "n_truncated": 171,
+        "truncated_ratio": 0.0342,
+        "length_bins": {
+          "<20": 1655,
+          "20-60": 2628,
+          ">=60": 717
+        }
+      },
+      "unk_char_ratio": 0.0007469044958118022
+    },
+    "test": {
+      "n": 10000,
+      "label_counts": {
+        "0": 4970,
+        "1": 5030
+      },
+      "pos_ratio": 0.503,
+      "length": {
+        "n": 10000,
+        "mean": 36.3533,
+        "p50": 28.0,
+        "p90": 77.0,
+        "p99": 139.0,
+        "max": 152,
+        "char_budget": 127,
+        "n_truncated": 303,
+        "truncated_ratio": 0.0303,
+        "length_bins": {
+          "<20": 3205,
+          "20-60": 5331,
+          ">=60": 1464
+        }
+      },
+      "unk_char_ratio": null
+    }
+  }
+}

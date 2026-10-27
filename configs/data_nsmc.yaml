@@ -1,0 +1,12 @@
+# NSMC 전처리 설정 (CLAUDE.md 3.2)
+task: prepare_nsmc
+seed: 42
+raw_dir: data/raw
+out_dir: data/processed/nsmc
+report_dir: results
+sizes:
+  train: 30000   # ratings_train 에서 층화 추출
+  dev: 5000      # ratings_train 의 나머지에서 층화 추출
+  test: 10000    # ratings_test 에서 층화 추출. 튜닝 중 절대 보지 않음
+max_len: 128     # [CLS] 포함 토큰 수. 문자는 최대 127자
+min_freq: 2      # train 에서 2회 미만 등장 문자는 [UNK]

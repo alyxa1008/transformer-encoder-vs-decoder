@@ -1,0 +1,25 @@
+# data / artifacts (never commit)
+data/
+checkpoints/
+*.pt
+*.ckpt
+results/**/*.pt
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
+
+# claude local
+.claude/settings.local.json
+
+# logs (재현은 results/*.json 로)
+results/logs/

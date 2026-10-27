@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "min_len": 5,
+  "max_len": 20,
+  "splits": {
+    "train": {
+      "n": 20000,
+      "len_min": 5,
+      "len_max": 20,
+      "len_mean": 12.44625
+    },
+    "valid": {
+      "n": 2000,
+      "len_min": 5,
+      "len_max": 20,
+      "len_mean": 12.5885
+    },
+    "test": {
+      "n": 2000,
+      "len_min": 5,
+      "len_max": 20,
+      "len_mean": 12.6875
+    }
+  }
+}
